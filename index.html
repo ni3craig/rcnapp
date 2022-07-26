@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | NursingApp</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #231F20"></canvas>
-    <script src="Build/2707.loader.js"></script>
+    <canvas id="unity-canvas" width=1440 height=810 style="width: 1440px; height: 810px; background: #231F20"></canvas>
+    <script src="Build/2607.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,14 +18,14 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/2707.data",
-        frameworkUrl: "Build/2707.framework.js",
-        codeUrl: "Build/2707.wasm",
+        dataUrl: "Build/2607.data",
+        frameworkUrl: "Build/2607.framework.js",
+        codeUrl: "Build/2607.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "NursingApp",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
